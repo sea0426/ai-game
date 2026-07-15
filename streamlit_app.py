@@ -34,7 +34,7 @@ if "questions" not in st.session_state:
 st.title("📚 영어 공부 + BTS 소개")
 st.write("원하는 메뉴를 선택해 보세요!")
 
-word_tab, bts_tab = st.tabs(["📖 영단어 게임", "🎤 BTS 소개"])
+word_tab, bts_tab, promise_tab = st.tabs(["📖 영단어 게임", "🎤 BTS 소개", "🌟 프로미스나인 소개"])
 
 with word_tab:
     st.header("영단어 게임")
@@ -106,3 +106,23 @@ with bts_tab:
     )
 
     st.info("BTS는 ‘방탄소년단’이라는 이름을 가지고 있어요. ‘방탄’은 방탄총알처럼 막아낸다는 뜻이랍니다.")
+
+with promise_tab:
+    st.header("프로미스나인 소개")
+    st.write("프로미스나인은 한국의 걸그룹입니다. 밝고 귀여운 분위기로 많은 팬을 사랑받고 있어요.")
+
+    st.subheader("프로미스나인의 특징")
+    st.markdown(
+        "- 멤버가 9명입니다.\n"
+        "- 귀엽고 발랄한 이미지가 특징입니다.\n"
+        "- 노래와 춤을 모두 잘합니다."
+    )
+
+    st.subheader("대표적인 느낌")
+    st.markdown(
+        "- 사랑스러운 매력\n"
+        "- 밝은 에너지\n"
+        "- 즐거운 무대"
+    )
+
+    st.info("프로미스나인은 ‘Fromis_9’라고도 불려요. 이름은 ‘from’과 ‘9’에서 따온 뜻이 있어요.")
